@@ -29,58 +29,39 @@ var x = setInterval(function() {
 }, 1000);
 
 
+//Slideshow
+var images = ["assets/images/columbiagorge.jpg", "assets/images/dammm.jpg", "assets/images/eastcanyon.jpg", "assets/images/gala.jpg", "assets/images/lanterns.jpg", "assets/images/tricksy.jpg", "assets/images/beachboys.jpg", "assets/images/vegas.jpg", "assets/images/zoobrew.jpg", "assets/images/saltlake.jpg"];
 
-var images = ["../images/beachboys.jpg", "../images/columbiagorge.jpg", "images/dammm.jpg", "images/eastcanyon.jpg", "images/gala.jpg", "images/lanterns.jpg", "images/tricksy.jpg", "images/vegas.jpg", "images/zoobrew.jpg", "images/saltlake.jpg"];
+var showImage;
 
-// Slideshow Activity
-// Students: follow the instructions below:
-
-// TODO: Put links to our images in this image array.
-
-// Variable showImage will hold the setInterval when we start the slideshow
-var showImage = setInterval(function(){}, 3000);
-
-// Count will keep track of the index of the currently displaying picture.
 var count = 0;
 
-// TODO: Use jQuery to run "startSlideshow" when we click the "start" button.
 $("#start").click(startSlideshow);
 
 $("#stop").click(stopSlideshow);
-// This function will replace display whatever image it's given
-// in the 'src' attribute of the img tag.
+
 function displayImage() {
-  $("#image-holder").html("<img src=" + images[count] + " width='800px'>");
+  $("#image-holder").html("<img src=" + images[count] + " width='400px'>");
 }
 
 function nextImage() {
-
-  // TODO: Increment the count by 1.
   count++;
 
-  // TODO: Show the loading gif in the "image-holder" div.
-//  $("#image-holder").html("<img src='images/loading.gif' width='400px'>");
+  $("#image-holder").html("<img src='images/loading.gif' width='200px'/>");
 
-  // TODO: Use a setTimeout to run displayImage after 1 second.
   setTimeout(displayImage, 1000);
-
-  // TODO: If the count is the same as the length of the image array, reset the count to 0.
-  if (count == images.length) {
-  	count = 0;
+  if (count === images.length) {
+    count = 0;
   }
 }
+
 function startSlideshow() {
-
-  // TODO: Use showImage to hold the setInterval to run nextImage.
-  	showImage = setInterval(nextImage, 3000);
+  showImage = setInterval(nextImage, 3000);
 }
+
 function stopSlideshow() {
-
-  // TODO: Put our clearInterval here:
   clearInterval(showImage);
-
 }
 
-// This will run the display image function as soon as the page loads.
 displayImage();
 });
