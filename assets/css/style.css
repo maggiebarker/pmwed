@@ -1,0 +1,35 @@
+body{
+	background-color: #98f785;
+	margin: 0 auto;
+}
+
+#header{
+	width: 100%;
+	height: 100px;
+	padding: 20px;
+	background-color: #d4d1d6;
+	text-align: center;
+	font-size: 36px;
+	color: #b076bf;
+}
+
+#clock {
+	width: 100%;
+	height: 80px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #b076bf;
+	text-align: center;
+	font-size: 38px;
+	color: #d4d1d6;
+
+}
+
+#slideshow {
+
+}
+
+
+
+
+
