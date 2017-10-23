@@ -4,33 +4,34 @@ body{
 }
 
 .jumbotron{
-	background-image: url('../images/stringlights2.jpg');
-	font-family: 'Francois One', sans-serif;
+	background-image: url('../images/stringlights3.jpeg');
+	font-family: 'Playfair Display', serif;
 	font-weight: bold;
-	color: #6a3782;
-	text-shadow: 2px 1px black;
+	color: #b076bf; /*#6a3782*/
+	text-shadow: 2px 1px #6a3782;
 }
 
 .jumbotron h1{
-	font-size: 48px;
+	font-size: 56px;
 }
 
 .jumbotron p{
-	font-size: 30px;
+	font-size: 38px;
 }
 
 .container{
-	width: 90%;
+	width: 100%;
 }
 
 #clock {
 	width: 100%;
-	height: 80px;
+	height: 120px;
 	padding: 20px;
-	margin-top: 20px;
+	margin-top: 10px;
 	background-color: #b076bf;
 	text-align: center;
-	font-size: 38px;
+	font-family: 'Playfair Display', serif;
+	font-size: 48px;
 	color: #d4d1d6;
 
 }
@@ -52,7 +53,7 @@ body{
 
 button p{
 	padding: 5px;
-	font-family: 'Francois One', sans-serif;
+	font-family: 'Playfair Display', serif;
 	color: #6a3782;
 	font-size: 20px;
 }
@@ -61,12 +62,12 @@ button p{
 	width: 350px;
 	border: 2px solid #6a3782;
 	background-color: #d4d1d6;
-	font-family: 'Francois One', sans-serif;
-	color:#6a3782;
+	font-family: 'Playfair Display', serif;
+	color: #6a3782;
 }
 
 #announcement p{
 	font-size: 22px;
-	font-family: 'Francois One', sans-serif;
+	font-family: 'Playfair Display', serif;
 }
 
